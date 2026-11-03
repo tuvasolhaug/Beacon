@@ -2,10 +2,11 @@
 //  BeaconApp.swift
 //  Beacon
 //
-//  Created by Tuva Thorkildsen Solhaug on 28/10/2025.
+//  Created by  on 28/10/2025.
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct BeaconApp: App {
@@ -13,5 +14,6 @@ struct BeaconApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: PlaceRating.self)
     }
 }
